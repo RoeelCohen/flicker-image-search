@@ -1,0 +1,62 @@
+.images-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	justify-items: center;
+	margin: 40px;
+
+	.image {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		align-self: center;
+		margin: 20px;
+	}
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	background-color: $venn-blue;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../assets//venn-logo-white.svg');
+	background-repeat: no-repeat;
+	background-position: 16px 50%;
+
+	input {
+		width: 50%;
+		max-width: 500px;
+	}
+
+	.logo {
+		margin-left: 18px;
+	}
+
+	.search-bar {
+		margin-left: 30px;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.images-container {
+		grid-template-columns: 1fr;
+
+		.image {
+			width: 250px;
+			height: 250px;
+			object-fit: cover;
+			align-self: center;
+			margin: 25px;
+		}
+	}
+
+	.header {
+		background-image: none;
+	}
+}
