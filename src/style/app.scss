@@ -9,6 +9,11 @@ body {
 	margin: 0px;
 	background-color: $background-color;
 	font-family: 'Open Sans Hebrew', serif;
+
+	&.cameraVisibile {
+		transition: background 500ms ease-in;
+		background: none;
+	}
 }
 
 input:not([type='submit']):not([type='file']) {
@@ -21,8 +26,10 @@ input:not([type='submit']):not([type='file']) {
 	}
 }
 
+@import 'main';
 @import 'images-gallery';
 @import 'loader';
 @import 'image-viewer';
 @import 'no-images-result';
 @import 'animations';
+@import 'qr-modal';

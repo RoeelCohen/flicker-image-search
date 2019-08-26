@@ -5,19 +5,20 @@ export const searchImagesAction = (text, page, perPage) => {
 	return async dispatch => {
 		const response = await searchImages(text, page, perPage);
 		if (response.photo) {
-			dispatch(imagesLoaded(text, response.photo, page));
+			dispatch(imagesLoaded(text, response.photo, response.page, response.pages));
 		} else {
 			dispatch(imageSearchFailed(response.error));
 		}
 	};
 };
 
-const imagesLoaded = (searchTerm, images, page) => ({
+const imagesLoaded = (searchTerm, images, page, pages) => ({
 	type: IMAGES_SEARCH,
 	payload: {
 		searchTerm,
 		images,
 		page,
+		pages,
 		timestamp: Date.now()
 	}
 });
