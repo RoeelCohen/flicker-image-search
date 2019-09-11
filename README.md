@@ -1,9 +1,4 @@
 This project is an Image Gallery with infinte scroll.
-</br>
-It was part of a job interview for [Venn](https://venn.city/).
-</br>
-I used their logo just as a use case.. All rights for the logos belongs to [Venn](https://venn.city/)!
-</br>
 
 3rd party libraries and open sources I used for this:
 </br>

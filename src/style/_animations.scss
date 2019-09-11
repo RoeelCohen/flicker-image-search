@@ -1,8 +1,19 @@
 .three-d-hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-	transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
 
-	&:hover {
-		transform: scale(1.2);
-	}
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.coin-flip {
+  animation: spin 2s ease-in-out infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
 }

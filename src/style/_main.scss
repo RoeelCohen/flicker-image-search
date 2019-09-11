@@ -19,10 +19,11 @@
   }
 
   .link {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50px;
+    background-color: $is-blue;
     display: flex;
     justify-content: center;
     align-items: center;

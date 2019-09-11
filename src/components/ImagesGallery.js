@@ -53,7 +53,7 @@ export class ImagesGallery extends Component {
     return (
       <div>
         <div className='header'>
-          <input className='search-bar' type='text' name='query' placeholder='Search images...' onChange={e => this.handleSearch(e.target.value)} />
+          <input className='search-bar' type='text' name='query' placeholder='Search pictures pls...' onChange={e => this.handleSearch(e.target.value)} />
         </div>
         {showDialog && <QrModal url={imageSource} onClose={this.closeImageViewer}/>}
         {images.length === 0 && <NoImagesResult />}

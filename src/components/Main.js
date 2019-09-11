@@ -11,7 +11,10 @@ export default function Main() {
                 <Link className={'link'} to="/Settings">Settings</Link>
             </div>
             <div className={'link'}>
-                <Link className={'link'} to="/camera">Settings</Link>
+                <Link className={'link'} to="/camera">Camera</Link>
+            </div>
+            <div className={'link'}>
+                <Link className={'link'} to="/animations">Animations</Link>
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import venLogoBlue from '../assets/venn-logo-blue.svg';
+import venLogoBlue from '../assets/is-logo-blue.svg';
 
 export default () => {
 	return (
